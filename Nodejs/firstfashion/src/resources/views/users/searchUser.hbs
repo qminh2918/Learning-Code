@@ -1,0 +1,36 @@
+<h3 class="">Tìm Kiếm Danh Sách Khách Hàng</h3>
+<a href="/users">
+    <i class="fas fa-arrow-alt-circle-left"></i>
+    Quay lại Danh sách khách hàng
+  </a>
+  <div class="wrapp">
+
+    <form class="mt-4"action="/users/searchUser" method="get">
+    {{!-- <input type="text" name="q" placeholder="search" > --}}
+    </form>
+   {{!-- <form action="" name="container-form"></form> --}}
+     
+    <table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Email</th>
+      <th scope="col">Thời gian</th>
+    </tr>
+  </thead>
+  <tbody>
+     {{#each users}}
+     <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.email}}</td>
+      <td>{{date this.createdAt 'dddd DD.MM.YYYY HH:mm'}}</td>
+    </tr>
+    {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có khách hàng nào.
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+

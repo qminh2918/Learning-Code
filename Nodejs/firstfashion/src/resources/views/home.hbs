@@ -1,0 +1,133 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/colections/showColection">
+        <img class="d-block w-100" src="/img/banner/slideshow_2.jpg" alt="First slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="/products/newArrival">
+      <img class="d-block w-100" src="/img/banner/slideshow_4.jpg" alt="Second slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="/products/sale">
+      <img class="d-block w-100" src="/img/banner/slideshow_5.jpg" alt="Third slide">
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div>
+  <div class="category container mt-5">
+    <div class="category__heading">
+      <h3 class="category__heading-special">
+        SẢN PHẨM NỔI BẬT
+      </h3>
+      <a href="/products/bonusProduct" class="category__bonus-tours">
+        <span> Xem thêm sản phẩm</span>
+        <span class="category__bonus-icon">
+          <i class="fas fa-angle-right"></i>
+        </span>
+      </a>
+    </div>
+    <div class="row">
+      {{#if products}}
+      {{#each products}}
+      <div class="col-lg-4 mt-4">
+        <div class="card" style="width: 18rem;">
+          <a href="/products/{{this._id}}/detailProduct">
+            <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <a href="/products/{{this._id}}/detailProduct">
+
+              <h5 class="card-title">{{this.nameProduct}}</h5>
+            
+            <p class="card-text description">{{this.description}}</p>
+            <div class="product-price">
+              <div class="product-current-price ">{{#numberFormat (subtract this.originalPrice (multiply
+                this.originalPrice (divide this.sale 100)))}} {{/numberFormat}} vnđ</div>
+                {{#if this.sale}}
+              <div class="product-original-price">{{#numberFormat this.originalPrice}}{{/numberFormat}} vnđ</div>
+              {{/if}}
+            </div>
+                {{#if this.sale}}
+            
+            <div class="home-product-item__sale-off">
+              <span class="home-product-item__sale-off-percent">{{this.sale}}%</span>
+              <span class="home-product-item__sale-off-label">Sale</span>
+            </div>
+            </a>
+            {{/if}}
+            {{!-- <a href="/products/{{this._id}}/detailProduct" class="btn btn-primary" style="align-item:center">Mua
+              hàng</a> --}}
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      {{else}}
+      <h2>Không có sản phẩm nào</h2>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+<div class="category container mt-5">
+  <div class="category__heading">
+    <h3 class="category__heading-special">
+      Bộ SƯU TẬP
+    </h3>
+    <a href="/colections/showColection" class="category__bonus-tours">
+      <span> Xem BST</span>
+      <span class="category__bonus-icon">
+        <i class="fas fa-angle-right"></i>
+      </span>
+    </a>
+  </div>
+  {{#if colections}}
+  {{#each colections}}
+  <div class="card ">
+    <div class="card-body">
+      <h5 class="card-title">{{this.nameProduct}}</h5>
+      <a href="/colections/showColection">
+      <img src="{{this.imageCategory}}" alt="">
+      </a>
+    </div>
+    {{/each}}
+    {{else}}
+     <h2>Không có BTS nào</h2>
+     {{/if}}
+  </div>
+</div>
+  {{!-- gallery --}}
+  <div class="category container mt-5">
+    <div class="category__heading">
+      <h3 class="category__heading-special">
+        Các nhà cung cấp
+      </h3>
+    </div>
+  </div>
+  <div class="gallery js-flickity mt-5">
+    {{#if suppliers}}
+    {{#each suppliers}}
+    <div class="gallery-cell ml-5">
+      <img src="{{this.imageSupplier}}" width="450" height="230" alt="">
+    </div>
+    {{/each}}
+    {{else}}
+     <h2>Không có nhà cung cấp nào</h2>
+     {{/if}}
+  </div>

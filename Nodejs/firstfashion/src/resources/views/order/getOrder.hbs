@@ -1,0 +1,75 @@
+<div class="container">
+    <h3>Thông tin </h3>
+    <div class="row">
+        <div class="col-6">
+            <form action="" method="">
+                <div class="form-detail">
+                    <div class="form-info col-lg-6 col-xs-12">
+                        <div class="group">
+                            <span class="bar"></span>
+                            <input class="control-custom" type="text" value="ID hóa đơn: {{order._id}}" />
+
+                        </div>
+                        <div class="group">
+                            <input class="control-custom" type="text" name='fullName' value="Họ & tên: {{order.fullName}}" />
+                            <span class="bar"></span>
+
+                        </div>
+                        <div class="group">
+                            <input class="control-custom" type="text" name="phoneNumber" value="Sđt: {{order.phoneNumber}}"
+                                selected="selected" />
+                            <span class="bar"></span>
+
+                        </div>
+                        <div class="group">
+                            <textarea class="control-custom" name="address">Đ/c: {{order.address}} </textarea>
+                            <span class="bar"></span>
+
+                        </div>
+                        <div class="form-button mt-4">
+                            <button class="btn btn-info" type="submit">Hóa đơn</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+            <div class="col-6">
+                
+                    <div class="card-body">                                       
+                        {{#each order.cart.items as |items|}}
+                        {{#each items as |item|}}
+                        {{#if item.image}}
+                        <div class="col-12 ">
+                            <img class="img-responsive" src="../../{{item.image}}" width="120" height="160">
+                        </div>
+                        {{/if}}
+                        {{#if item.nameProduct}}
+                        <div class="col-6 ">
+                            <h4 class="product-name"><strong>{{item.nameProduct}}</strong></h4>
+                            <span> ID Sản phẩm: {{item._id}}</span>
+                        </div>
+                        {{/if}}
+                        {{/each}}
+                            <div class="col-12">                                
+                                    Giá : {{#numberFormat items.price}} {{/numberFormat}} vnđ
+                                    <div class="quantity">
+                                    số lượng:{{items.qty}}
+                                </div>                                                                                           
+                            </div>                            
+                            {{/each}} 
+                   
+                </div>
+                <hr>
+                <div class="card-footer"></div>
+                <div class="pull-right" style="margin: 10px">
+                    <div class="pull-right" style="margin: 5px">
+                        Tổng số tiền: <b>{{#numberFormat order.cart.totalPrice}}{{/numberFormat}} vnđ</b>
+                    </div>
+
+                </div>
+
+            </div>    
+    </div>
+</div>
+</div>

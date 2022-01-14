@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card" style="width: 50rem; border:none; padding:50px">
+                <a href=""><img class="card-img-top" src="../../{{product.image}}" alt="Card image cap"></a>
+            </div>
+        </div>
+        {{!-- <div class="row"> --}}
+            <div class="col">
+                <div class="card-body" style="padding:0">
+                    
+                        <h2 class="card-title" >{{product.nameProduct}}</h2>
+                    
+                </div>
+                <div class="product-price">
+                    <div class="product-current-price ">{{#numberFormat (subtract product.originalPrice (multiply
+                        product.originalPrice (divide product.sale 100)))}} {{/numberFormat}} vnđ</div>
+                    <div class="product-original-price">{{#numberFormat product.originalPrice}}{{/numberFormat}} vnđ
+                    </div>
+                </div>
+                <label for="">Kích thước</label><br>
+                <div class="wrap-size">
+                    {{#each product.size as |item|}}
+                    <div class="product-size pl-4" data-value="{{item}}">
+                        <div class="product-size-value text-center" id="product-modal">{{item}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div><br>
+                    <label for="">Số lượng</label><br>
+                    
+                    <div class="buttons_added">
+                        <input class="minus is-form" type="button" value="-">
+                        <input aria-label="quantity" class="input-qty" id="sl"
+                         max="{{product.quantity}}"min="1"
+                            name="quantity" type="number" value="1">
+                        <input class="plus is-form" type="button" value="+">
+                    </div>
+                </div>
+                <div>
+                    
+                    <form name="submit-form" action="/products/{{product._id}}/addToCart" method="post" id="submitForm">
+                    <input type="hidden" id="quantityItem" value="1" name="quantityItem">
+                    {{!-- <button class="btn btn-outline-secondary btn-buy-product mt-4" data="{{product._id}}"type="submit">Thêm giỏ hàng</button> --}}
+                    <button class="btn btn-dark mt-4 btn-buy-product" type="submit" data-id="{{product._id}}">Mua ngay</button>
+                    </form>
+                </div><br>
+                <label for="">Mô tả sản phẩm</label><br>
+                <div class="product-description">
+                    <span>{{product.description}}</span>
+                </div>
+            </div>
+        </div>
+    <form action="/products/{{product._id}}/postComment"method="post" >
+    <label for="">Phản hồi</label>
+    <input type="text" class="form-control input-comment" name="comment" placeholder="Thêm bình luân...">
+    </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        var sizeValue;
+        var quantity;
+        $('input.input-qty').each(function () {
+            var $this = $(this),
+                qty = $this.parent().find('.is-form'),
+                min = Number($this.attr('min')),
+                max = Number($this.attr('max'))
+            console.log(max)
+           var d = min;
+            $(qty).on('click', function () {
+                if ($(this).hasClass('minus')) {
+                    if (d > min) d += -1
+                } else if ($(this).hasClass('plus')) {
+                    var x = Number($this.val()) + 1
+                    if (x <= max) d += 1
+                }
+                $this.attr('value', d).val(d)
+            })
+        })
+
+        $('.product-size').on('click', function () {
+            $(this).addClass('color-size');
+           
+             sizeValue = $(this).data("value");
+            
+             
+        })
+        $('.product-size').on('dblclick', function () {
+            $(this).removeClass('color-size');
+        })
+        $('.is-form').click(function () {
+            var quantity = parseFloat($("input[name='quantity']").val(), 10);
+             console.log(quantity)
+        })
+
+
+        $('#submitForm').submit(function() {
+            var qt = parseFloat($("input[name='quantity']").val(), 10);
+            $("#quantityItem").val(qt)
+            console.log(qt)
+        })
+    
+    })
+
+</script>

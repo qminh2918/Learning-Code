@@ -1,0 +1,20 @@
+<h3>Sửa Bộ Sưu Tập</h3>
+<div class="product-fix">
+      <a href="/colections">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Danh mục</a>
+  </div>
+<form action="/colections/{{colection._id}}/updateColection" method="POST" enctype="multipart/form-data">
+    <label for="">Tên bộ sưu tập</label>
+    <input type="text" class="form-control" name="nameColection" id="nameColection" value="{{colection.nameColection}}" placeholder="Tên danh mục" required><br>
+    <label for="">Ảnh</label>
+    <input type="file" class="form-control" name="imageColection" id="imageColection" placeholder=""multiple ><br>  
+    <div><img src="../../{{colection.imageColection}}" width="50" height="60" alt="ảnh sản phẩm"></div><br>
+    <label for="">Mô tả</label>
+    <textarea type="text" class="form-control" name="descriptionColection" id="descriptionColection">{{colection.descriptionColection}}</textarea><br> 
+    <button class="btn btn-primary" type="submit">Sửa bộ sưu tập</button>
+</form>
+{{!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> --}}
+<script>
+
+</script>

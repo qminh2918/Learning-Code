@@ -1,0 +1,38 @@
+<h3>Sửa Danh Sách Nhân Viên</h3>
+<div class="product-fix">
+      <a href="/personnel">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Sản Phẩm</a>
+  </div>
+<form action="/personnel/{{personnel._id}}/updatePersonnel" method="POST" enctype="multipart/form-data">
+<label for="">Ảnh</label>
+    <div class="form-img mt-4">
+    <input type="file" class="form-control edit-img" name="image" id="image" value="{{personnel.image}}"accept=".jpg, .jpeg, .png">
+    <div>
+      <img src="../../{{personnel.image}}" width="50" height="60" alt="ảnh sản phẩm"></div>
+    </div><br>
+    <label for="">Họ và tên</label>
+    <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Harry Potter" value="{{personnel.fullName}}" required><br>
+    <select name="gender" id="">
+        {{#select personnel.gender}}
+        <option value="">--Giới tính--</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+        <option value="Khác">Khác</option>
+        {{/select}}
+    </select><br>
+    <label for="">Ngày Sinh</label>
+    <input type="date" class="form-control" name="dateOfBirth"id="dateOfBirth" placeholder="dateOfBirth" value="{{personnel.dateOfBirth}}"selected="selected" required><br>
+    <label for="">Địa Chỉ</label>
+    <input type="text" class="form-control" name="address" id="address" placeholder="Địa chỉ" value="{{personnel.address}}" required>
+    <label for="">Số Điện Thoại</label>
+    <input type="number" class="form-control" name="numberPhone" id="numberPhone" placeholder="" value="{{personnel.numberPhone}}"required selected="selected"><br>
+   <select name="position">
+       {{#select personnel.position}}
+        <option value="">--Chức Vụ--</option>
+        <option value="Nhân viên">Nhân Viên</option>
+        <option value="Admin">Admin</option>
+        {{/select}}
+    </select><br>
+    <button class="btn btn-primary mt-2" type="submit">Sửa Thông Tin</button>
+</form>

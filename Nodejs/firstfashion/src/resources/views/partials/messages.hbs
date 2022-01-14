@@ -1,0 +1,34 @@
+
+{{#if messages}}
+{{#each messages as |message|}}
+<div class="alert alert-danger" style="font-size:14px; text-align:center">
+    {{message}}
+</div>
+{{/each}}
+{{/if}}
+
+{{#if successses}}
+{{#each successes as |success|}}
+<div class="alert alert-success" style="font-size:14px; text-align:center">
+    {{success}}
+</div>
+{{/each}}
+{{/if}}
+
+{{#if errors}}
+{{#each errors as |error|}}
+<div class="alert alert-danger" style="font-size:14px; text-align:center">
+    {{error}}
+</div>
+{{/each}}
+{{/if}}
+
+
+
+
+
+
+
+
+
+

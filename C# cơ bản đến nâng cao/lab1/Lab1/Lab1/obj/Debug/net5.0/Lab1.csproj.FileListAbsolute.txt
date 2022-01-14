@@ -1,0 +1,16 @@
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.exe
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.deps.json
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.runtimeconfig.json
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.runtimeconfig.dev.json
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.dll
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\ref\Lab1.dll
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\bin\Debug\net5.0\Lab1.pdb
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.csproj.AssemblyReference.cache
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.AssemblyInfoInputs.cache
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.AssemblyInfo.cs
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.csproj.CoreCompileInputs.cache
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.dll
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\ref\Lab1.dll
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.pdb
+E:\learningCode\C# cơ bản đến nâng cao\lab1\Lab1\Lab1\obj\Debug\net5.0\Lab1.genruntimeconfig.cache

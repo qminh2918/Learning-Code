@@ -1,0 +1,72 @@
+<h3 class="">Bình luận</h3>
+<div class="wrapp">
+  <form class="mt-4" action="/users/searchUser" method="get">
+    {{!-- <input type="text" name="q" placeholder="search"> --}}
+  </form>
+  <div class="btn-create"><a href=""></a>
+    <div class="user-fix">
+    </div>
+  </div>
+</div>
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Email</th>
+      <th scope="col">Bình luận</th>
+      <th scope="col">Trạng thái</th>
+      <th scope="col">Thời gian</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    {{#if this.comment}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>
+        {{#each this.comment as |item|}}
+        <span>{{item.user}}</span><br>
+        {{/each}}
+      </td>
+      <td>
+        {{#each this.comment as |item|}}
+        <span>{{item.content}}</span><br>
+        {{/each}}
+      </td>
+      <td>
+        {{#each this.comment as |item|}}
+        {{#ifEquals item.status '0'}}
+        <button type="button" class="btn btn-warning btn-handle-comment mt-2" data-id="{{item._id}}">Chưa xử lí</button><br>
+        {{else}}
+        <button type="button" class="btn btn-primary" data-id="{{item._id}}">Đã xem</button><br>
+        {{/ifEquals}}
+        {{/each}}
+      </td>
+      <td>{{date this.createdAt 'dddd DD.MM.YYYY HH:mm'}}</td>
+    </tr>
+    {{/if}}
+    {{/each}}
+  </tbody>
+</table>
+
+{{!-- form hidden --}}
+<form id ='submit-btn-handle-comment' method="post"></form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>
+  $(function(){
+    var btnId;
+    var btnHandlerComment = $('.btn-handle-comment')
+
+    var formHandlerComment = $('#submit-btn-handle-comment')
+    btnHandlerComment.click(function(){
+      btnId = $(this).data('id');
+      console.log(btnId)
+      formHandlerComment.attr('action','/responseProduct/'+btnId+'/commentHandle')
+      formHandlerComment.submit()
+    })
+  })
+  </script>
+

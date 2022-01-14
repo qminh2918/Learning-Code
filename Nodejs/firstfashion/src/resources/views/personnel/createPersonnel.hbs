@@ -1,0 +1,30 @@
+<h3>Thêm Nhân Viên</h3>
+<div class="product-fix">
+      <a href="/personnel">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại </a>
+  </div>
+<form action="/personnel/storePersonnel" method="POST"  enctype="multipart/form-data">
+    <label for="">Ảnh</label>
+    <input type="file" class="form-control" name="image" id="image" placeholder=""required>
+    <label for="">Họ và tên</label>
+    <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Harry" required><br>
+    <select name="gender" id="">
+        <option value="">--Giới tính--</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+        <option value="different">Khác</option>
+    </select><br>
+    <label for="">Ngày Sinh</label>
+    <input type="date" class="form-control" name="dateOfBirth"id="dateOfBirth" placeholder="dateOfBirth" required><br>
+    <label for="">Địa Chỉ</label>
+    <input type="text" class="form-control" name="address" id="address" placeholder="Địa chỉ" required>
+    <label for="">Số Điện Thoại</label>
+    <input type="number" class="form-control" name="numberPhone" id="numberPhone" placeholder="" required><br>
+   <select name="position" id="">
+        <option value="">--Chức Vụ--</option>
+        <option value="Nhân viên">Nhân Viên</option>
+        <option value="Admin">Admin</option>
+    </select><br>
+    <button class="btn btn-primary mt-2" type="submit">Thêm Nhân Viên</button>
+</form>

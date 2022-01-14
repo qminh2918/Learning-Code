@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "6056466133a9033908aa436f"
+  },
+  "size": [
+    "M"
+  ],
+  "deleted": false,
+  "nameProduct": "Vest dạ tay lỡ",
+  "supplier": "Format",
+  "quantity": 6,
+  "originalPrice": 500000,
+  "sale": 0,
+  "description": "Áo vest dạ cổ tròn, tay lỡ. Có 2 túi vuông không nắp phía trước. Diềm tua rua ở cổ, tay áo và quanh túi. Trang trí nơ cách điệu có thể di chuyển được. Cài bằng khuy bấm kim loại phía trước.\r\n\r\nKết hợp với zuýp đồng bộ mang đến set đồ hoàn hảo. Chất liệu dạ tweed có độ dày vừa phải, kiểu áo này giúp giữ các cô gái giữ ấm cơ thể trong ngày trời se lạnh mà vẫn hợp mốt và thời thượng.",
+  "note": "new arrival",
+  "image": "img\\products\\1616266849331-áo vest dạ tay lỡ.jpg",
+  "comment": [
+    {
+      "status": 0,
+      "_id": {
+        "$oid": "605cb40ac6da844158ad4c22"
+      },
+      "content": "so pretty",
+      "user": "a@gmail.com"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-20T19:00:49.385Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-25T16:29:40.135Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "605cb4d4c6da844158ad4c23"
+  },
+  "size": [
+    "M",
+    "L"
+  ],
+  "deleted": false,
+  "nameProduct": "Đầm thun xếp nếp",
+  "supplier": "Format",
+  "quantity": 20,
+  "originalPrice": 500000,
+  "sale": 5,
+  "description": "Đầm mini cổ vuông. Tay dài bo gấu, vai áo bo chun co giãn tạo phồng. Mặt trước thân áo xếp nếp, chần chun co giãn. Dáng đầm xuông với độ dài ngang gối.\r\n\r\nChi tiết tay bo gấu dài cổ điển kết hợp ăn ý cùng vải chần chun co giãn ở mặt trước làm thăng hạng vẻ đẹp thanh lịch cho nàng công sở. Chất liệu thun mềm mịn, thoáng mát là một điểm cộng lớn cho chiếc đầm này. Một item mà nàng diện đến sở làm hay xuống phố ngày cuối tuần cũng đều rất phù hợp.",
+  "note": "new arrival",
+  "image": "img\\products\\1616688340805-đầm thun xếp nếp.jpg",
+  "comment": [],
+  "createdAt": {
+    "$date": "2021-03-25T16:05:40.826Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-25T16:08:06.672Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605cb52bc6da844158ad4c24"
+  },
+  "size": [
+    "S",
+    "L"
+  ],
+  "deleted": false,
+  "nameProduct": "Quần dài cạp nơ",
+  "supplier": "HM",
+  "quantity": 20,
+  "originalPrice": 400000,
+  "sale": 20,
+  "description": "Quần dài ống đứng, cạp cao trang trí nơ và móc tròn kim loại. Đường xếp nếp cố định từ cạp xuống. Có 2 túi chéo. Cài bằng khóa kéo bên hông.\r\n\r\nVới thiết kế đơn giản nhưng hiện đại, kết hợp cùng đai thắt eo, nàng có thể thoải mái diện từ những ngày đi làm bình thường hay những buổi họp hành cần sự chỉnh chu.",
+  "note": "sale",
+  "image": "img\\products\\1616688427791-quần dài cạp nơ.jpg",
+  "comment": [],
+  "createdAt": {
+    "$date": "2021-03-25T16:07:07.803Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-25T16:07:07.803Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,23 @@
+<div class="container">
+<h3>Kết quả tìm kiếm</h3>
+<div class="row">
+{{#each products}}
+    <div class="col-lg-4 mt-4">
+      <div class="card" style="width: 18rem;">
+        <a href="/products/{{this._id}}/detailProduct">
+
+        <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <a href="/products/{{this._id}}/detailProduct">
+          <h5 class="card-title">{{this.nameProduct}}</h5>
+          </a>
+          <p class="card-text description">{{this.description}}</p>
+          
+          <a href="/products/{{this._id}}/detailProduct" class="btn btn-primary">Mua hàng</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+</div

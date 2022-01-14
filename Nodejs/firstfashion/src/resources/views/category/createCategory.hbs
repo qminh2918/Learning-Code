@@ -1,0 +1,20 @@
+<h3>Thêm Danh mục</h3>
+<div class="product-fix">
+      <a href="/category">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Danh mục</a>
+  </div>
+<form action="/category/storeCategory" method="POST" enctype="multipart/form-data">
+    <label for="">Tên danh mục</label>
+    <input type="text" class="form-control" name="nameCategory" id="nameCategory" placeholder="Tên danh mục" required>
+    <label for="">Tên sản phẩm</label>
+    <input type="text" class="form-control" name="nameProduct" id="nameProduct" placeholder="Nhà sản phẩm" required>
+    
+    <label for="">Ảnh</label>
+    <input type="file" class="form-control" name="imageCategory" id="imageCategory" placeholder=""multiple required>
+    <button class="btn btn-primary mt-2" type="submit">Thêm danh mục</button>
+</form>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+</script>

@@ -1,0 +1,176 @@
+<div class="wrapper ">
+  <div class="header-showroom text-left"><i class="fas fa-headphones-alt"></i> Hotline CSKH 0123456789</div>
+  <div class="navbar">
+    <div class="nav1">
+      <div class="nav-search">
+        <form action="/search">
+          <input type="text" class="input-search" id="searchtext" size="20" name="q" placeholder="Tìm kiếm...">
+        </form>
+        <span>
+          <a href="#"><i class="fas fa-search icon-search"></i></a>
+        </span>
+      </div>
+      <div class="nav-logo"><a href="/"><img src="/img/7.png" alt="" class="logo-icon"></a></div>
+      <div class="nav-cart">
+        <div class="cart">
+          <a href="/cart"><i class="fas fa-shopping-bag"></i>Giỏ hàng</a>
+          <span class="badge badge-danger">{{session.cart.totalQty}}</span>
+        </div>
+        {{#if email}}
+        <div class="dropdown">
+          <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span><i class="fas fa-user"></i></span>{{email}}
+          </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="logout">Đăng xuất</a>
+          </div>
+        </div>
+        {{else}}
+        <div class="user">
+          <a href="/login"><i class="fas fa-user"></i>Đăng nhập</a>
+        </div>
+        {{/if}}
+
+      </div>
+    </div>
+    <div class="nav2">
+      <ul class="inline-list">
+
+        <li class="menu-item col-3">
+          <a href="#" class="menu-link a">
+            HÀNG MỚI
+          </a>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <div class="menu">
+            <div class="row">
+              <div class="col-lg-3">
+                <ul>
+                  {{#each categories}}
+                  <a href="/products/colections/{{this.nameProduct}}">
+                    <li class="new-arrival">{{this.nameProduct}}</li>
+                  </a>
+                  {{!-- <a href="/category/newArrrival">
+                    <li class="new-arrival">Đầm</li>
+                  </a> --}}
+                  {{/each}}
+                </ul>
+              </div>
+              <div class="row">
+                {{#each categories}}
+                <div class="col-lg-6 mt-4">
+                  <div class="card" style="width: 10rem; border:none">
+                    <a href="/products/colections/{{this.nameProduct}}"><img class="card-img-top"
+                        src="/{{this.imageCategory}}" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <a href="/products/colections/{{this.nameProduct}}">
+                        <h5 class="card-title">{{this.nameProduct}}</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {{/each}}
+                {{!-- <div class="col-lg-6 mt-4">
+                  <div class="card" style="width: 10rem; border:none">
+                    <a href=""><img class="card-img-top" src="/img/vaysm.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <a href="">
+                        <h5 class="card-title">Đầm</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div> --}}
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <li class="menu-item col-3">
+          <a href="#" class="menu-link a">
+            BỘ SƯU TẬP
+          </a>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <div class="menu1">
+            <div class="row">
+              <div class="col-lg-3">
+                {{!-- <ul>
+                  <a href="">
+                    <li class="new-arrival">Vest</li>
+                  </a>
+                  <a href="">
+                    <li class="new-arrival">Đầm</li>
+                  </a>
+                </ul> --}}
+              </div>
+              <div class="row">
+                {{#each colections}}
+                <div class="col-lg-6 mt-4">
+                  <div class="card" style="width: 10rem; border:none">
+                    <a href="/colections/showColection"><img class="card-img-top" src="/{{this.imageCategory}}"
+                        alt="Card image cap"></a>
+                    <div class="card-body">
+                      <a href="/colections/showColection">
+                        <h5 class="card-title">{{this.nameProduct}}</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item col-3">
+          <a href="#" class="menu-link a">
+            SALE
+          </a>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <div class="menu2">
+            <div class="row">
+              <div class="col-lg-3">
+                {{!-- <ul>
+                  <a href="">
+                    <li class="new-arrival">Sản phẩm sale</li>
+                  </a>
+                </ul> --}}
+              </div>
+              <div class="row">
+                {{#each sales}}
+                <div class="col-lg-6 mt-4">
+                  <div class="card" style="width: 10rem; border:none">
+                    <a href="/products/colections/{{this.nameProduct}}"><img class="card-img-top"
+                        src="/{{this.imageCategory}}" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <a href="/products/colections/{{this.nameProduct}}">
+                        <h5 class="card-title">{{this.nameProduct}}</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item col-3">
+          <a href="/contact" class="menu-link a">LIÊN HỆ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var currentScroll = $(this).scrollTop();
+
+      if (currentScroll > 0) {
+
+        $('.navbar').addClass('navbar-fix').removeClass('navbar')
+      } else {
+        $('.navbar').removeClass('navbar-fix').addClass('navbar')
+      }
+    })
+  })
+</script>

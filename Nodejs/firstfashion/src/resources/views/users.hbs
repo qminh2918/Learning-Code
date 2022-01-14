@@ -1,0 +1,28 @@
+<h3 class="">Danh Sách Khách Hàng</h3>
+<div class="wrapp">
+  <form class="mt-4" action="/users/searchUser" method="get">
+    <input type="text" name="q" placeholder="search">
+  </form>
+  <div class="btn-create"><a href=""></a>
+    <div class="user-fix">
+    </div>
+  </div>
+</div>
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tài khoản Email</th>
+      <th scope="col">Thời gian</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.email}}</td>
+      <td>{{date this.createdAt 'dddd DD.MM.YYYY HH:mm'}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

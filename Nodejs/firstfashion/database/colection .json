@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6058dcbfa3c7593fa87c876b"
+  },
+  "deleted": false,
+  "nameColection": "Xuân Hè ",
+  "descriptionColection": "Bộ sưu tập mới hướng đến sự tiện dụng tối đa, người mặc rất dễ dàng để kết hợp các sản phẩm tạo nên những hình ảnh phong cách khác nhau với cùng một sản phẩm. Mỗi thiết kế trong bộ sưu tập lần này cũng được đề cao tính ứng dụng với kết cấu buộc eo, dễ dàng dịch chuyển số đo và đem lại sự thoải mái tự tin cho người mặc",
+  "imageColection": "img\\colections\\1616436415274-lookbook.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6058e2ebde8d713f0c2eaed3"
+  },
+  "deleted": false,
+  "nameColection": "Xuân Hè",
+  "descriptionColection": "Trong bộ sưu tập mới này, sử dụng nhiều chất liệu khác nhau, cho thấy khả năng biến hòa chất liệu của nhà thiết kế Hà Nội này vô cùng phong phú. Không dễ dàng để tạo nên sự kết hợp đầy nhuần nhuyễn giữa những chất liệu cứng và mềm, mỏng như vậy.",
+  "imageColection": "img\\colections\\1616437995838-xh5.jpg",
+  "__v": 0
+}]

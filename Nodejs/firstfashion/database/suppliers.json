@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "602d256af7acbd2a8ff810bd"
+  },
+  "nameSupplier": "H&M",
+  "imageSupplier": "img\\suppliers\\1616001494847-HM.jpg",
+  "deleted": false
+},{
+  "_id": {
+    "$oid": "60523ccf3624a829108aac93"
+  },
+  "deleted": false,
+  "imageSupplier": "img\\suppliers\\1616002255269-JM.jpg",
+  "__v": 0,
+  "nameSupplier": "JM"
+},{
+  "_id": {
+    "$oid": "60523cf43624a829108aac94"
+  },
+  "deleted": false,
+  "imageSupplier": "img\\suppliers\\1616002292231-seven-am.png",
+  "__v": 0,
+  "nameSupplier": "SevenAm"
+}]

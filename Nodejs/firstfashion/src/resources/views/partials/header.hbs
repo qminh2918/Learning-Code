@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width: 105%;
+    position: fixed;
+    z-index: 10;">
+  <a class="navbar-brand" href="/manage">
+    <i class="fas fa-user-cog mr-2"></i>Manage </a>
+  {{#if adminLogin}}
+  <a class="navbar-brand login-admin mr-4" href="" data-toggle="modal" data-target="#exampleModal" aria-haspopup="true"
+    aria-expanded="false">{{adminLogin}}</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"></a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/personnel">Quản lí nhân sự</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/logoutAdmin">Đăng xuất</a>
+      </div>
+    </li>
+  </ul>
+
+  {{else}}
+  <a class="navbar-brand login-admin" href="/loginAdmin" data-toggle="modal" data-target="#exampleModal"
+    aria-haspopup="true" aria-expanded="false"></a>
+
+  {{/if}}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  </div>
+</nav>
+<div class="row ">
+  <div class="col-lg-2">
+    <div class="list-group mt-5 " id="list-tab" role="tablist ">
+      <a class=" list-group-item list-group-item-action" href="/order" role="tab" aria-controls="home"><i
+          class="fas fa-dolly-flatbed mr-2"></i>Quản lí đơn hàng</a>
+      
+      <a class=" list-group-item list-group-item-action" href="/responseProduct" onclick="noRoload('phanhoi')"
+        role="tab" aria-controls="home"><i class="fas fa-reply-all mr-2"></i>Phản hồi</a>
+      <a class="list-group-item list-group-item-action " href="/products"><i class="fas fa-tshirt mr-2"></i>Quản lí sản
+        phẩm</a>
+        <a class="list-group-item list-group-item-action " href="/colections" role="tab" aria-controls="settings"><i
+          class="fas fa-dolly-flatbed mr-2"></i>Quản lí bộ sưu tập</a>
+      <a class="list-group-item list-group-item-action " href="/category"><i class="fas fa-bars mr-2"></i>Danh mục sản
+        phẩm</a>
+      <a class="list-group-item list-group-item-action " href="/users" role="tab"><i class="fas fa-user mr-2"></i>Khách
+        hàng</a>
+      <a class="list-group-item list-group-item-action " href="/suppliers"><i class="fas fa-building mr-2"></i>Nhà cung
+        cấp</a>
+  </div>
+    {{!-- <div style="width:228px; height:100%; background-color: #3333"></div> --}}
+  </div>
+
+  {{!-- <div>aria-haspopup="true" aria-expanded="false"</div> --}}

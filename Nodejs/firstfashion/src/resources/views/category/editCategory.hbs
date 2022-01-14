@@ -1,0 +1,20 @@
+<h3>Sửa Danh mục</h3>
+<div class="product-fix">
+      <a href="/category">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Danh mục</a>
+  </div>
+<form action="/category/{{category._id}}/updateCategory" method="POST" enctype="multipart/form-data">
+    <label for="">Tên danh mục</label>
+    <input type="text" class="form-control" name="nameCategory" id="nameCategory" value="{{category.nameCategory}}" placeholder="Tên danh mục" required><br>
+    <label for="">Tên sản phẩm</label>
+    <input type="text" class="form-control" name="nameProduct" id="nameProduct" value="{{category.nameProduct}}" placeholder="Nhà sản phẩm" required><br> 
+    <label for="">Ảnh</label>
+    <input type="file" class="form-control" name="imageCategory" id="imageCategory" placeholder=""multiple><br>  
+    <div><img src="../../{{category.imageCategory}}" width="50" height="60" alt="ảnh sản phẩm"></div><br>
+    <button class="btn btn-primary" type="submit">Sửa danh mục</button>
+</form>
+{{!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> --}}
+<script>
+
+</script>

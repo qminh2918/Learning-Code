@@ -1,0 +1,21 @@
+<h3>Thêm Bộ Sưu Tập</h3>
+<div class="product-fix">
+      <a href="/colections">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Bộ Sưu Tập</a>
+  </div>
+<form action="/colections/storeColection" method="POST" enctype="multipart/form-data">
+    <label for="">Tên bộ sưu tập</label>
+    <input type="text" class="form-control" name="nameColection" id="nameColection" placeholder="Tên bộ sưu tập" required>
+    
+    <label for="">Ảnh</label>
+    <input type="file" class="form-control" name="imageColection" id="imageColection" placeholder=""multiple required> <br>
+    <label for="">Mô tả </label>
+    <textarea type="text" class="form-control" name="descriptionColection" id="descriptionColection" placeholder="Nhà sản phẩm" required></textarea>
+    
+    <button class="btn btn-primary mt-2" type="submit">Thêm bộ sưu tập</button>
+</form>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+</script>

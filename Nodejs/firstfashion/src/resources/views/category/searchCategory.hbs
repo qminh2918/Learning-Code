@@ -1,0 +1,96 @@
+<h3 class="" style="margin-top:75px">Danh mục sản phẩm</h3>
+<div class="wrapp">
+  <form class="mt-4" action="/category/searchCategory" method="get">
+    {{!-- <input type="text" name="q" placeholder="search"> --}}
+  </form>
+  <div class="btn-create"><a href="/category/createCategory" class="btn btn-primary"><i
+        class="fas fa-plus-circle"></i>Thêm mới</a>
+    <div class="fix">
+      <a href="/category/trashCategory">
+        <i class="fas fa-trash-alt"></i>
+        Thùng rác ({{deleteCount}})</a>
+    </div>
+  </div>
+</div>
+<form action="" name="container-form">
+
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên danh mục</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Ảnh</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each categories}}
+      <tr>
+        <th scope="row">{{sum @index 1}}</th>
+        <td>{{this.nameCategory}}</td>
+        <td>{{this.nameProduct}}</td>
+        <td>
+          <img src="../{{this.imageCategory}}" width="50" height="60" alt="ảnh sản phẩm">
+        </td>
+        <td class="action">
+          <a href="/category/{{this._id}}/editCategory"><i class="fas fa-edit"></i></a>
+          <a href="" data-toggle="modal" data-target="#delete-category-modal" data-id="{{this._id}}"><i
+              class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có mục sản phẩm nào.
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</form>
+
+<!--hidden form-->
+<form name="delete-category-form" method="POST"></form>
+
+<!--Confirm delete-->
+
+<div class="modal" id="delete-category-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xóa Danh Mục ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn hủy Danh Mục này ?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-delete-category" type="button" class="btn btn-danger">Xóa bỏ</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jquery-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var categoryId;
+    var deleteForm = document.forms['delete-category-form'];
+    //lấy được id
+    $('#delete-category-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      categoryId = button.data('id');
+      console.log(categoryId)
+    })
+
+    var btnDeleteCategory = document.getElementById('btn-delete-category');
+
+    btnDeleteCategory.onclick = function () {
+      deleteForm.action = '/category/' + categoryId + '/deleteCategory/';
+      deleteForm.submit();
+    }
+  })
+</script>

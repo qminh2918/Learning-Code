@@ -1,0 +1,40 @@
+<h3 class="" style="margin-top:75px">Nhân Sự </h3>
+<a href="/personnel">
+    <i class="fas fa-arrow-alt-circle-left"></i>
+    Quay lại Nhân sự</a>
+<div class="form-detail mt-5">
+    <div class="form-info col-lg-6 col-xs-12">
+        <div class="group">
+            <img src="../../{{person.image}}" alt="không có">
+            <span class="bar"></span>
+        </div>
+        <div class="group">
+            <input class="control-custom" type="text" name='fullName' value=" {{person.fullName}}" />
+            <span class="bar"></span>
+
+        </div>
+
+        <div class="group">
+            <input class="control-custom" type="text" name='gender' value=" {{person.gender}}" />
+            <span class="bar"></span>
+
+        </div>
+        <div class="group">
+            <input class="control-custom" type="text" name="numberPhone" value="{{person.numberPhone}}"
+                selected="selected" />
+            <span class="bar"></span>
+
+        </div>
+        <div class="group">
+            <textarea class="control-custom" name="address"> {{person.address}} </textarea>
+            <span class="bar"></span>
+
+        </div>
+        <div class="group">
+            <input class="control-custom" type="text" name="position" value="{{person.position}}" selected="selected" />
+            <span class="bar"></span>
+
+        </div>
+
+    </div>
+</div>

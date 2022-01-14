@@ -1,0 +1,72 @@
+<h3 class="">Danh Sách Đặt Hàng</h3>
+<div class="product-fix">
+      <a href="/order">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Sản Phẩm</a>
+  </div>
+<div class="wrapp">
+    <form class="mt-4" action="/order/searchOrder" method="get">
+        {{!-- <input type="text" name="q" placeholder="search"> --}}
+    </form>
+    <div class="btn-create"><a href=""></a>
+        <div class="user-fix">
+        </div>
+    </div>
+</div>
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Họ và tên</th>
+            <th scope="col">Địa chỉ</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col">Chi tiết</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col">Thời gian</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each orders}}
+        <tr>
+            <th scope="row">{{sum @index 1}}</th>
+            <td>{{this.fullName}}</td>
+            <td >
+                <textarea name="" id="" cols="30" rows="2">{{this.address}}</textarea>
+                
+                </td>
+            <td>{{this.phoneNumber}}</td>
+            <td><a href="order/{{this._id}}/getOrder">Chi tiết</a></td>
+            <td>
+                {{#ifEquals status '0'}}
+                <button type="button" class="btn btn-warning btn-handle-order" data-id="{{this._id}}">Chưa xử lí</button>
+                {{else}}
+                <button type="button" class="btn btn-primary" data-id="{{this._id}}">Đã xử lí</button>
+                {{/ifEquals}}
+            </td>
+            <td>{{date this.createdAt 'dddd DD.MM.YYYY HH:mm'}}</td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>
+{{!-- form hidden --}}
+<form id='submit-btn-handle-order' method="post"></form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script>
+$(function() {   
+    var btnHandler =  $('.btn-handle-order')
+    var formHandler = $('#submit-btn-handle-order')
+    console.log(btnHandler)
+     btnHandler.click(function(e) {
+        var btnId;
+        btnId = $(this).data('id')
+        console.log(btnId)
+        formHandler.attr('action','/order/'+btnId+'/orderHandle')
+        formHandler.submit()
+        
+    })
+})
+
+</script>

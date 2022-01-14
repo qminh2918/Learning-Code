@@ -1,0 +1,106 @@
+
+<div class="container">
+   <div class="card shopping-cart">
+        <div class="card-header bg-dark text-light">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Giỏ hàng
+        </div>
+        <div class="card-body">
+                <!-- PRODUCT -->
+                {{#if session.cart}}
+                {{#each session.cart.items}}
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-2 text-center">
+                            <img class="img-responsive" src="{{item.image}}" alt="prewiew" width="120" height="160">
+                    </div>
+                    <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+                        <h4 class="product-name"><strong>{{item.nameProduct}}</strong></h4>
+                        {{!-- <h4>
+                            <small>{{Cart.totalQty}}</small>
+                        </h4> --}}
+                    </div>
+                    <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                        <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                            <h6><strong>{{#numberFormat (subtract item.originalPrice (multiply item.originalPrice (divide
+                                item.sale 100)))}}{{/numberFormat}} vnđ<span class="text-muted"> x</span></strong></h6>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4">
+                            <div class="quantity" id="quantity">
+                                <input class="minus is-form" type="button" value="-">
+                                <input type="number" step="1" max="{{item.quantity}}" min="1" value="{{qty}}" title="Qty" class="qty"
+                                        name="qty" id="qty{{item._id}}" data-id="{{item._id}}">
+                                <input class="plus is-form" type="button" value="+">
+                            </div>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 text-right">
+                            <button type="button" class="btn btn-outline-danger btn-xs btn-delete-cart"
+                                data-id={{item._id}}>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                {{/each}}
+                {{!-- form hidden --}}
+                <form action="/cart/postUpdateCart" method="POST" id="cart-update">
+                    <input type="hidden" name="quantityUpdate" id="quantityUpdate" value="1">
+                    <input type="hidden" name="idUpdate" id="idUpdate" value="1">  
+                </form>
+                {{/if}}
+                <!-- END PRODUCT -->
+            {{!-- <div class="pull-right">
+                <button class="btn btn-outline-secondary pull-right" type="submit" form="cart-update">Cập nhật giỏ hàng</button>
+            </div> --}}
+        </div>
+        <div class="card-footer"></div>
+            <div class="pull-right" style="margin: 10px">
+                <div class="pull-right" style="margin: 5px">
+                    Tổng số tiền: <b>{{#numberFormat session.cart.totalPrice}}{{/numberFormat}} vnđ</b>
+                </div>
+                <a href="/order/addOrder" class="btn btn-success pull-right">Thanh toán</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="" method="POST" id="delete-cart-form"></form>
+<script src="/javascript/jquery.js"></script>
+<script>
+    $(function () {
+        var cartId;
+        var formDeleteCart = $('#delete-cart-form')
+        var btnDleteCart = $('.btn-delete-cart')
+
+        btnDleteCart.click(function () {
+            cartId = $(this).data('id')
+            formDeleteCart.attr('action', '/cart/' + cartId + '/deleteCart')
+            formDeleteCart.submit()
+        })
+        $('input.qty').each(function(index, value) {
+            var $this = $(this),
+                qty = $this.parent().find('.is-form'),
+                min = Number($this.attr('min')),
+                max = Number($this.attr('max'))
+                qtyUpdate = Number($this.attr('value'))
+                
+            var d = qtyUpdate;
+            $(qty).on('click', function () {
+                id = ($this.attr('data-id'))
+                if ($(this).hasClass('minus')) {
+                    if (d > min) d += -1
+                } else if ($(this).hasClass('plus')) {
+                    var x = Number($this.val()) + 1
+                    if (x <= max) d += 1
+                }
+                $this.attr('value', d).val(d)
+
+                $('#quantityUpdate').val(d);
+                $('#idUpdate').val(id);
+                $('#cart-update').submit();
+            })
+
+        });
+       
+    })
+
+</script>

@@ -1,0 +1,16 @@
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.exe
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.deps.json
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.runtimeconfig.json
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.runtimeconfig.dev.json
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.dll
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\ref\VirtualMethod.dll
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\bin\Debug\net5.0\VirtualMethod.pdb
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.csproj.AssemblyReference.cache
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.GeneratedMSBuildEditorConfig.editorconfig
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.AssemblyInfoInputs.cache
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.AssemblyInfo.cs
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.csproj.CoreCompileInputs.cache
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.dll
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\ref\VirtualMethod.dll
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.pdb
+E:\learningCode\C# cơ bản đến nâng cao\VirtualMethod\VirtualMethod\VirtualMethod\obj\Debug\net5.0\VirtualMethod.genruntimeconfig.cache

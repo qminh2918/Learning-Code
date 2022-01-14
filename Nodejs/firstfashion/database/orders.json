@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "6058c1d0917bfb2ea0ad75de"
+  },
+  "status": 1,
+  "user": {
+    "$oid": "605799f8cfaddb2d14c8c27f"
+  },
+  "cart": {
+    "items": {
+      "60563f90780b7c1d44b8f7a7": {
+        "item": {
+          "size": [
+            "S",
+            "M"
+          ],
+          "deleted": false,
+          "_id": {
+            "$oid": "60563f90780b7c1d44b8f7a7"
+          },
+          "nameProduct": "Quần baggy",
+          "supplier": "HM",
+          "quantity": 10,
+          "originalPrice": 200000,
+          "sale": 5,
+          "description": "Quần baggy cạp cao có đỉa. Ống quần xếp nếp cố định. Có 2 túi chéo. Gấu quần gấp cố định. Cài khóa kéo và khuy kim loại ẩn.\r\n\r\nĐược may từ chất liệu Tuysi cao cấp cùng thiết kế đẹp mắt, mang đến cho bạn nữ sự trẻ trung, nữ tính nhưng cũng không kém phần hiện đại. Bên cạnh đó, sản phẩm với gam màu trung tính, giúp bạn nữ dễ phối cùng các phụ kiện khác làm tăng thêm sự sành điệu trong phong cách thời trang của mình.\r\n\r\nMàu sắc: Đen - Nâu cà phê",
+          "note": "sale",
+          "image": "img\\products\\1616265104442-quần baggy.jpg",
+          "comment": [],
+          "createdAt": {
+            "$date": "2021-03-20T18:31:44.474Z"
+          },
+          "updatedAt": {
+            "$date": "2021-03-20T18:31:44.474Z"
+          },
+          "__v": 0
+        },
+        "qty": 1,
+        "price": 190000
+      }
+    },
+    "totalQty": 1,
+    "totalPrice": 190000
+  },
+  "fullName": "Linh",
+  "address": "Thanh Xuân - Hà Nội ",
+  "phoneNumber": 123456789,
+  "createdAt": {
+    "$date": "2021-03-22T16:12:00.764Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-22T17:28:08.232Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6058c339917bfb2ea0ad75df"
+  },
+  "status": 1,
+  "user": {
+    "$oid": "605799f8cfaddb2d14c8c27f"
+  },
+  "cart": {
+    "items": {
+      "60563f90780b7c1d44b8f7a7": {
+        "item": {
+          "size": [
+            "S",
+            "M"
+          ],
+          "deleted": false,
+          "_id": {
+            "$oid": "60563f90780b7c1d44b8f7a7"
+          },
+          "nameProduct": "Quần baggy",
+          "supplier": "HM",
+          "quantity": 10,
+          "originalPrice": 200000,
+          "sale": 5,
+          "description": "Quần baggy cạp cao có đỉa. Ống quần xếp nếp cố định. Có 2 túi chéo. Gấu quần gấp cố định. Cài khóa kéo và khuy kim loại ẩn.\r\n\r\nĐược may từ chất liệu Tuysi cao cấp cùng thiết kế đẹp mắt, mang đến cho bạn nữ sự trẻ trung, nữ tính nhưng cũng không kém phần hiện đại. Bên cạnh đó, sản phẩm với gam màu trung tính, giúp bạn nữ dễ phối cùng các phụ kiện khác làm tăng thêm sự sành điệu trong phong cách thời trang của mình.\r\n\r\nMàu sắc: Đen - Nâu cà phê",
+          "note": "sale",
+          "image": "img\\products\\1616265104442-quần baggy.jpg",
+          "comment": [],
+          "createdAt": {
+            "$date": "2021-03-20T18:31:44.474Z"
+          },
+          "updatedAt": {
+            "$date": "2021-03-20T18:31:44.474Z"
+          },
+          "__v": 0
+        },
+        "qty": 2,
+        "price": 380000
+      },
+      "6056466133a9033908aa436f": {
+        "item": {
+          "size": [
+            "M"
+          ],
+          "deleted": false,
+          "_id": {
+            "$oid": "6056466133a9033908aa436f"
+          },
+          "nameProduct": "Vest dạ tay lỡ",
+          "supplier": "Format",
+          "quantity": 2,
+          "originalPrice": 500000,
+          "sale": 0,
+          "description": "Áo vest dạ cổ tròn, tay lỡ. Có 2 túi vuông không nắp phía trước. Diềm tua rua ở cổ, tay áo và quanh túi. Trang trí nơ cách điệu có thể di chuyển được. Cài bằng khuy bấm kim loại phía trước.\r\n\r\nKết hợp với zuýp đồng bộ mang đến set đồ hoàn hảo. Chất liệu dạ tweed có độ dày vừa phải, kiểu áo này giúp giữ các cô gái giữ ấm cơ thể trong ngày trời se lạnh mà vẫn hợp mốt và thời thượng.",
+          "note": "new arrival",
+          "image": "img\\products\\1616266849331-áo vest dạ tay lỡ.jpg",
+          "comment": [],
+          "createdAt": {
+            "$date": "2021-03-20T19:00:49.385Z"
+          },
+          "updatedAt": {
+            "$date": "2021-03-20T19:00:49.385Z"
+          },
+          "__v": 0
+        },
+        "qty": 1,
+        "price": 500000
+      }
+    },
+    "totalQty": 3,
+    "totalPrice": 880000
+  },
+  "fullName": "Vân",
+  "address": "Cầu Giấy -Hà Nội",
+  "phoneNumber": 12345689,
+  "createdAt": {
+    "$date": "2021-03-22T16:18:01.657Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-22T17:17:36.534Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605cba74f49c5e2ea8a037af"
+  },
+  "status": 0,
+  "user": {
+    "$oid": "605b338cf846f92ed028a068"
+  },
+  "cart": {
+    "items": {
+      "6056466133a9033908aa436f": {
+        "item": {
+          "size": [
+            "M"
+          ],
+          "deleted": false,
+          "_id": {
+            "$oid": "6056466133a9033908aa436f"
+          },
+          "nameProduct": "Vest dạ tay lỡ",
+          "supplier": "Format",
+          "quantity": 4,
+          "originalPrice": 500000,
+          "sale": 0,
+          "description": "Áo vest dạ cổ tròn, tay lỡ. Có 2 túi vuông không nắp phía trước. Diềm tua rua ở cổ, tay áo và quanh túi. Trang trí nơ cách điệu có thể di chuyển được. Cài bằng khuy bấm kim loại phía trước.\r\n\r\nKết hợp với zuýp đồng bộ mang đến set đồ hoàn hảo. Chất liệu dạ tweed có độ dày vừa phải, kiểu áo này giúp giữ các cô gái giữ ấm cơ thể trong ngày trời se lạnh mà vẫn hợp mốt và thời thượng.",
+          "note": "new arrival",
+          "image": "img\\products\\1616266849331-áo vest dạ tay lỡ.jpg",
+          "comment": [
+            {
+              "status": 0,
+              "_id": {
+                "$oid": "605cb40ac6da844158ad4c22"
+              },
+              "content": "so pretty",
+              "user": "a@gmail.com"
+            }
+          ],
+          "createdAt": {
+            "$date": "2021-03-20T19:00:49.385Z"
+          },
+          "updatedAt": {
+            "$date": "2021-03-25T16:02:18.407Z"
+          },
+          "__v": 1
+        },
+        "qty": 2,
+        "price": 1000000
+      }
+    },
+    "totalQty": 2,
+    "totalPrice": 1000000
+  },
+  "fullName": "Quỳnh",
+  "address": "Thanh Xuân -Hà Nội",
+  "phoneNumber": 12345689,
+  "createdAt": {
+    "$date": "2021-03-25T16:29:40.130Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-25T16:29:40.130Z"
+  },
+  "__v": 0
+}]

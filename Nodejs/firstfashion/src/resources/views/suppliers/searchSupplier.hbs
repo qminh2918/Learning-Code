@@ -1,0 +1,92 @@
+<h3 class="" style="margin-top:75px">Quản Lí Nhà Cung Cấp</h3>
+<div class="wrapp">
+  <div class="btn-create"><a href="/suppliers/createSupplier" class="btn btn-primary"><i
+        class="fas fa-plus-circle"></i>Thêm mới</a>
+    <div class="product-fix">
+      <a href="/suppliers/trashSupplier">
+        <i class="fas fa-trash-alt"></i>
+        Thùng rác ({{deleteCount}})</a>
+    </div>
+  </div>
+</div>
+<form action="" name="container-form">
+
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên nhà cung cấp</th>
+        <th scope="col">Hình ảnh</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each suppliers}}
+      <tr>
+        <th scope="row">{{sum @index 1}}</th>
+        <td>{{this.nameSupplier}}</td>
+        <td>
+            <img src="img/{{this.imageSupplier}}" width="50" height="60" alt="ảnh nhà cung cấp">
+        </td>
+        <td class="action">
+          <a href="/suppliers/{{this._id}}/editSupplier"><i class="fas fa-edit"></i></a>
+          <a href="" data-toggle="modal" data-target="#delete-supplier-modal" data-id="{{this._id}}"><i
+              class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có nhà cung cấp nào.
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</form>
+
+<!--hidden form-->
+<form name="delete-supplier-form" method="POST"></form>
+
+<!--Confirm delete-->
+
+<div class="modal" id="delete-supplier-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xóa Nhà Cung Cấp ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn xóa nhà cung cấp này ?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-delete-supplier" type="button" class="btn btn-danger">Xóa bỏ</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jquery-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var suppliersId;
+    var deleteForm = document.forms['delete-supplier-form'];
+    //lấy được id
+    $('#delete-supplier-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      suppliersId = button.data('id');
+      console.log(suppliersId)
+    })
+
+    var btnDeleteSupplier = document.getElementById('btn-delete-supplier');
+
+    btnDeleteSupplier.onclick = function () {
+      deleteForm.action = '/suppliers/' + suppliersId + '/deleteSupplier/';
+      deleteForm.submit();
+    }
+
+  })
+</script>

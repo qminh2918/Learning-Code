@@ -1,0 +1,14 @@
+<h3>Sửa Sản Phẩm</h3>
+<div class="product-fix">
+      <a href="/suppliers">
+        <i class="fas fa-arrow-alt-circle-left"></i>
+        Quay lại Sản Phẩm</a>
+  </div>
+<form action="/suppliers/{{supplier._id}}/updateSupplier" method="POST" enctype="multipart/form-data">
+    <label for="">Tên nhà cung cấp</label>
+    <input type="text" class="form-control" name="nameSupplier" id="nameSupplier" value="{{supplier.nameSupplier}}" placeholder="vd:H&M" required >
+    <label for="">Hình ảnh</label>
+    <input type="file" class="form-control" name="imageSupplier" id="imageSupplier" placeholder="">
+    <img src="../../{{supplier.imageSupplier}}" alt="không có hình ảnh" width="50" height="60"><br>
+    <button class="btn btn-primary mt-2" type="submit">Thêm Nhà Cung Cấp</button>
+</form>

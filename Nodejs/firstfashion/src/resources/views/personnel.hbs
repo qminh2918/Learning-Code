@@ -1,0 +1,105 @@
+<h3 class="" style="margin-top:75px">Quản lí nhân sự</h3>
+<div class="wrapp">
+  <form class="mt-4" action="/personnel/searchPersonnel" method="get">
+    <input type="text" name="q" placeholder="search">
+  </form>
+  <div class="btn-create"><a href="/personnel/createPersonnel" class="btn btn-primary"><i
+        class="fas fa-plus-circle"></i>Thêm mới</a>
+    <div class="fix">
+      <a href="/personnel/trashPersonnel">
+        <i class="fas fa-trash-alt"></i>
+        Thùng rác ({{deleteCount}})</a>
+    </div>
+  </div>
+</div>
+<form action="" name="container-form">
+
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Họ và tên</th>
+        {{!-- <th scope="col">Giới tính</th> --}}
+        {{!-- <th scope="col">Ngày sinh</th>
+        <th scope="col">Địa chỉ</th> --}}
+        <th scope="col">Số điện thoại</th>
+        <th scope="col">Chức vụ</th>
+        <th scope="col">Chi tiết</th>
+        <th scope="col">Thời gian tạo</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each personnels}}
+      <tr>
+        <th scope="row">{{sum @index 1}}</th>
+        <td>{{this.fullName}}</td>
+        {{!-- <td>{{this.gender}}</td> --}}
+        {{!-- <td>{{this.dateOfBirth}}</td> --}}
+        {{!-- <td>{{this.address}}</td> --}}
+        <td>{{this.numberPhone}}</td>
+        <td>{{this.position}}</td>
+        <td><a href="/personnel/{{this._id}}/detailPersonnel">Chi tiết</a></td>
+        <td>{{date this.createdAt 'dddd DD.MM.YYYY HH:mm'}}</td>
+        <td class="action">
+          <a href="/personnel/{{this._id}}/editPersonnel"><i class="fas fa-edit"></i></a>
+          <a href="" data-toggle="modal" data-target="#delete-personnel-modal" data-id="{{this._id}}"><i
+              class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có nhân viên nào.
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</form>
+
+<!--hidden form-->
+<form name="delete-personnel-form" method="POST"></form>
+
+<!--Confirm delete-->
+
+<div class="modal" id="delete-personnel-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xóa Sản Phẩm ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn xóa nhân viên này ?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-delete-personnel" type="button" class="btn btn-danger">Xóa bỏ</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jquery-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var personnelId;
+    var deleteForm = document.forms['delete-personnel-form'];
+    //lấy được id
+    $('#delete-personnel-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      personnelId = button.data('id');
+      console.log(personnelId)
+    })
+
+    var btnDeletePersonnel = document.getElementById('btn-delete-personnel');
+
+    btnDeletePersonnel.onclick = function () {
+      deleteForm.action = '/personnel/' + personnelId + '/deletePersonnel/';
+      deleteForm.submit();
+    }
+
+  })
+</script>

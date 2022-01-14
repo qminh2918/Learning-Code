@@ -1,0 +1,70 @@
+<div class="container">
+    <h3>Tạo địa chỉ</h3>
+    <div class="row">
+        <div class="col-6">
+            <form action="/order/postOrder" method="post">
+                <div class="form-detail">
+                    <div class="form-info col-lg-6 col-xs-12">
+                        <div class="group">
+
+                            <input class="control-custom" type="text" name='fullName' placeholder="Họ và tên" />
+                            <span class="bar"></span>
+                        </div>
+                        <div class="group">
+
+                            <input class="control-custom" type="number" name="phoneNumber"
+                                placeholder="Số điện thoại" />
+                            <span class="bar"></span>
+                        </div>
+                        <div class="group">
+
+                            <textarea class="control-custom" name="address" placeholder="Địa chỉ"></textarea>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="form-button mt-4">
+                            <button class="btn btn-info" type="submit">Hoàn thành</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-6">
+            <div class="card-body">
+                <!-- PRODUCT -->
+                {{#if session.cart}}
+                {{#each session.cart.items}}
+                <div class="row">
+                    <div class="col-12 ">
+                        <img class="img-responsive" src="../../{{item.image}}" alt="prewiew" width="120" height="160">
+                    </div>
+                    <div class="col-6 ">
+                        <h4 class="product-name"><strong>{{item.nameProduct}}</strong></h4>
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-3">
+                            <h6><strong>Giá:{{#numberFormat (subtract item.originalPrice (multiply item.originalPrice
+                                    (divide item.sale 100)))}}{{/numberFormat}} vnđ</span></strong></h6>
+                        </div>
+                        <div class="col-3">
+                            <div class="quantity">
+                                số lượng:{{qty}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            {{/each}}
+            {{/if}}
+                <div class="card-footer"></div>
+                <div class="pull-right" style="margin: 10px">
+                    <div class="pull-right" style="margin: 5px">
+                        Tổng số tiền: <b>{{#numberFormat session.cart.totalPrice}}{{/numberFormat}} vnđ</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

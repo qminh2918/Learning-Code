@@ -1,0 +1,41 @@
+D:\ESVN\Source\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.csprojResolveAssemblyReference.cache
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll.config
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.pdb
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\log4net.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.pdb
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.pdb
+D:\ESVN\Source\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.xml
+D:\ESVN\Source\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.dll
+D:\ESVN\Source\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.pdb
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll.config
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.pdb
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\log4net.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.pdb
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.pdb
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.xml
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.csprojResolveAssemblyReference.cache
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.dll
+E:\ESVN\Source Code\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.pdb
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll.config
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Dal.pdb
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\log4net.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Common.pdb
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\Nes.Resources.pdb
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\bin\Debug\EntityFramework.xml
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.csproj.AssemblyReference.cache
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.csproj.CoreCompileInputs.cache
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.csproj.CopyComplete
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.dll
+D:\learningCode\C#_MVC\bachngoctoan.com_cms\NES2\NES\Nes.Dal\obj\Debug\Nes.Dal.pdb

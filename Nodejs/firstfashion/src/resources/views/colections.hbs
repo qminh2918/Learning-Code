@@ -1,0 +1,96 @@
+<h3 class="" style="margin-top:75px">Quản Lý Bộ Sưu Tập</h3>
+<div class="wrapp">
+  <form class="mt-4" action="/colections/searchColection" method="get">
+    <input type="text" name="q" placeholder="search">
+  </form>
+  <div class="btn-create"><a href="/colections/createColection" class="btn btn-primary"><i
+        class="fas fa-plus-circle"></i>Thêm mới</a>
+    <div class="fix">
+      <a href="/colections/trashColection">
+        <i class="fas fa-trash-alt"></i>
+        Thùng rác ({{deleteCount}})</a>
+    </div>
+  </div>
+</div>
+<form action="" name="container-form">
+
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Ảnh</th>
+        <th scope="col">Mô tả</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each colections}}
+      <tr>
+        <th scope="row">{{sum @index 1}}</th>
+        <td>{{this.nameColection}}</td>
+        <td>
+          <img src="{{this.imageColection}}" width="50" height="60" alt="ảnh sản phẩm">
+        </td>
+        <td class="description" width="500">{{this.descriptionColection}}</td>
+        <td class="action">
+          <a href="/colections/{{this._id}}/editColection"><i class="fas fa-edit"></i></a>
+          <a href="" data-toggle="modal" data-target="#delete-colection-modal" data-id="{{this._id}}"><i
+              class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có Bộ sưu tập nào.
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</form>
+
+<!--hidden form-->
+<form name="delete-colection-form" method="POST"></form>
+
+<!--Confirm delete-->
+
+<div class="modal" id="delete-colection-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xóa Bộ Sưu Tập?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn hủy Bộ Sưu Tập này ?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-delete-colection" type="button" class="btn btn-danger">Xóa bỏ</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jquery-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var colectionId;
+    var deleteForm = document.forms['delete-colection-form'];
+    //lấy được id
+    $('#delete-colection-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      colectionId = button.data('id');
+      console.log(colectionId)
+    })
+
+    var btnDeleteColection = document.getElementById('btn-delete-colection');
+
+    btnDeleteColection.onclick = function () {
+      deleteForm.action = '/colections/' + colectionId + '/deleteColection/';
+      deleteForm.submit();
+    }
+  })
+</script>

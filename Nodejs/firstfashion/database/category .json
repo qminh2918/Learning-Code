@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "603e054039cfc554d40c840e"
+  },
+  "deleted": false,
+  "nameCategory": "Hàng mới",
+  "nameProduct": "Vest",
+  "imageCategory": "img\\category\\1614955626269-nice.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603e081a39cfc554d40c840f"
+  },
+  "deleted": false,
+  "nameCategory": "Hàng mới",
+  "nameProduct": "Đầm",
+  "imageCategory": "img\\category\\1614684399021-vaysm.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60443266342ceb36bc7ae433"
+  },
+  "deleted": false,
+  "nameCategory": "Bộ sưu tập ",
+  "nameProduct": "Xuân - Hè ",
+  "imageCategory": "img\\category\\1615082287319-xuanhe.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6058e1d6de8d713f0c2eaed2"
+  },
+  "deleted": false,
+  "nameCategory": "Sale",
+  "nameProduct": "Quần",
+  "imageCategory": "img\\category\\1616437718977-áo sơ mi lụa viền đen.jpg",
+  "__v": 0
+}]

@@ -1,0 +1,108 @@
+<h3 class="mt-4">Sản Phẩm</h3>
+  <div class="wrapp">
+    <form class="mt-4"action="/products/searchProduct" method="get">
+    <input type="text" name="q" placeholder="search" >
+    </form>
+    <div class="btn-create"><a href="/products/createProduct" class="btn btn-primary"><i class="fas fa-plus-circle"></i>Thêm mới</a>
+    <div class="product-fix">
+      <a href="/products/trashProduct">
+        <i class="fas fa-trash-alt"></i>
+        Thùng rác ({{deleteCount}})</a>
+  </div>
+    </div>
+    </div>
+   <form action="" name="container-form">
+     
+    <table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên sản phẩm</th>
+      <th scope="col">Nhà cung cấp</th>
+      <th scope="col">size</th>
+      <th scope="col">Giá gốc(vnđ)</th>
+      <th scope="col">Sale(%)</th>
+      <th scope="col">Giá đã giảm(vnđ)</th>
+      <th scope="col">Số lượng</th>
+      <th scope="col">Ảnh</th>
+      <th scope="col">Mô tả</th>
+      <th scope="col">hành động</th>
+    </tr>
+  </thead>
+  <tbody>
+     {{#each products}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.nameProduct}}</td>
+      <td>{{this.supplier}}</td>
+      <td>{{this.size}}</td>
+      <td> {{#numberFormat this.originalPrice}}  {{/numberFormat}}</td>
+      <td>{{this.sale}}</td>
+      <td>{{#numberFormat  (subtract this.originalPrice (multiply this.originalPrice (divide this.sale 100)))}} {{/numberFormat}}</td>
+      <td>{{this.quantity}}</td>
+      <td>
+        <img src="{{this.image}}" width="50" height="60" alt="ảnh sản phẩm">     
+        </td>
+      <td class="description">{{this.description}}</td>
+      <td>{{this.note}}}</td>
+      <td class="action">
+        <a href="/products/{{this._id}}/editProduct"><i class="fas fa-edit"></i></a>
+        <a href="" data-toggle="modal" data-target="#delete-product-modal" data-id="{{this._id}}"><i class="fas fa-trash"></i></a>
+      </td>
+    </tr>
+    {{else}}
+      <tr>
+        <td class="text-center" colspan="10">Không có sản phẩm nào.
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</form>
+
+<!--hidden form-->
+<form name="delete-product-form" method="POST"></form>
+
+<!--Confirm delete-->
+
+<div class="modal"id ="delete-product-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xóa Sản Phẩm ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn hủy Sản Phẩm này ?</p>
+      </div>
+      <div class="modal-footer">
+        <button id = "btn-delete-product"type="button" class="btn btn-danger">Xóa bỏ</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jquery-->
+<script>
+    document.addEventListener('DOMContentLoaded', function(){  
+        var productId;
+        var deleteForm =  document.forms['delete-product-form'];
+    //lấy được id
+    $('#delete-product-modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        productId = button.data('id');
+        console.log(productId)
+    })
+
+    var btnDeleteProduct = document.getElementById('btn-delete-product');
+
+        btnDeleteProduct.onclick = function(){
+           deleteForm.action = '/products/' + productId+'/deleteProduct/';
+           deleteForm.submit();
+        }
+
+    })
+    </script>

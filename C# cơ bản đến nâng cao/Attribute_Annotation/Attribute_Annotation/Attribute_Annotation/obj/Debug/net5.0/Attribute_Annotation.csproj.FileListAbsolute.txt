@@ -1,0 +1,15 @@
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.exe
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.deps.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.runtimeconfig.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.runtimeconfig.dev.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\ref\Attribute_Annotation.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\bin\Debug\net5.0\Attribute_Annotation.pdb
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.AssemblyInfoInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.AssemblyInfo.cs
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.csproj.CoreCompileInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\ref\Attribute_Annotation.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.pdb
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Attribute_Annotation\Attribute_Annotation\Attribute_Annotation\obj\Debug\net5.0\Attribute_Annotation.genruntimeconfig.cache

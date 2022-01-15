@@ -1,0 +1,16 @@
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.exe
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.deps.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.runtimeconfig.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.runtimeconfig.dev.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\ref\Asynchronous.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\bin\Debug\net5.0\Asynchronous.pdb
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.csproj.AssemblyReference.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.AssemblyInfoInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.AssemblyInfo.cs
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.csproj.CoreCompileInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\ref\Asynchronous.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.pdb
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\Asynchronous\Asynchronous\Asynchronous\obj\Debug\net5.0\Asynchronous.genruntimeconfig.cache

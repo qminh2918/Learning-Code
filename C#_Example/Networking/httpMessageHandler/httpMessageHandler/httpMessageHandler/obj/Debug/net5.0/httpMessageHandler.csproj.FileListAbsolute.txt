@@ -1,0 +1,16 @@
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.exe
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.deps.json
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.runtimeconfig.json
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.runtimeconfig.dev.json
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.dll
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\ref\httpMessageHandler.dll
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\bin\Debug\net5.0\httpMessageHandler.pdb
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.csproj.AssemblyReference.cache
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.AssemblyInfoInputs.cache
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.AssemblyInfo.cs
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.csproj.CoreCompileInputs.cache
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.dll
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\ref\httpMessageHandler.dll
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.pdb
+E:\Study\Learning-Code\C#_Example\Networking\httpMessageHandler\httpMessageHandler\httpMessageHandler\obj\Debug\net5.0\httpMessageHandler.genruntimeconfig.cache

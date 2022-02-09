@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "uri_dns_ping/1.0.0": {
+        "runtime": {
+          "uri_dns_ping.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "uri_dns_ping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

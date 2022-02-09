@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uri_dns_ping", "uri_dns_ping\uri_dns_ping.csproj", "{AECA33E0-17E6-45D1-8E3F-F80B4AFE95A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECA33E0-17E6-45D1-8E3F-F80B4AFE95A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECA33E0-17E6-45D1-8E3F-F80B4AFE95A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECA33E0-17E6-45D1-8E3F-F80B4AFE95A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECA33E0-17E6-45D1-8E3F-F80B4AFE95A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0928B13-7755-4C37-B620-BDCF6BE017EB}
+	EndGlobalSection
+EndGlobal

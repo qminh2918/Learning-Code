@@ -1,0 +1,16 @@
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.exe
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.deps.json
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.runtimeconfig.json
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.runtimeconfig.dev.json
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.dll
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\ref\uri_dns_ping.dll
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\bin\Debug\net5.0\uri_dns_ping.pdb
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.AssemblyInfoInputs.cache
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.AssemblyInfo.cs
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.csproj.CoreCompileInputs.cache
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.dll
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\ref\uri_dns_ping.dll
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.pdb
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.genruntimeconfig.cache
+E:\Study\Learning-Code\C#_Example\Networking\uri_dns_ping\uri_dns_ping\uri_dns_ping\obj\Debug\net5.0\uri_dns_ping.csproj.AssemblyReference.cache

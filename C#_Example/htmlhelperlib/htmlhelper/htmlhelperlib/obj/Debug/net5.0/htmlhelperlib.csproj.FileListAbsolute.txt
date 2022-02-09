@@ -1,0 +1,12 @@
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\bin\Debug\net5.0\htmlhelperlib.deps.json
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\bin\Debug\net5.0\htmlhelperlib.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\bin\Debug\net5.0\ref\htmlhelperlib.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\bin\Debug\net5.0\htmlhelperlib.pdb
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.csproj.AssemblyReference.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.AssemblyInfoInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.AssemblyInfo.cs
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.csproj.CoreCompileInputs.cache
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\ref\htmlhelperlib.dll
+E:\Study\Learning-Code\C# cơ bản đến nâng cao\htmlhelperlib\htmlhelper\htmlhelperlib\obj\Debug\net5.0\htmlhelperlib.pdb

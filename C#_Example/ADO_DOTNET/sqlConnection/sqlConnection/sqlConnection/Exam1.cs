@@ -30,7 +30,7 @@ namespace sqlConnection
             //connection.StateChange += (object sender, StateChangeEventArgs e) =>
             //{
             //    Console.WriteLine($"Kết nối thay đổi: {e.CurrentState}, trạng thái trước: " + $"{e.OriginalState}");
-            //};
+            //}; 
 
             // mở kết nối
             connection.Open();

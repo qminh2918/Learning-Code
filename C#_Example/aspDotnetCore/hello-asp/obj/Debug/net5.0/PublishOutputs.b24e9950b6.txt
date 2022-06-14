@@ -1,0 +1,7 @@
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\hello-asp.exe
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\appsettings.Development.json
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\appsettings.json
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\hello-asp.dll
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\hello-asp.deps.json
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\hello-asp.runtimeconfig.json
+E:\Study\Learning-Code\C#_Example\aspDotnetCore\hello-asp\bin\Debug\net5.0\publish\hello-asp.pdb
